@@ -2,6 +2,7 @@ import React from 'react'
 import {useState} from 'react'
 import emailjs from "@emailjs/browser";
 import emailkeys from '../emailkeys';
+import swal from 'sweetalert';
 import "./contact.css"
 
 const Contact=()=>{
@@ -61,6 +62,17 @@ const emails = async (nombre,apellido,email,phone,mensaje) => {
           .then(
             function (response) {
               console.log("SUCCESS!", response.status, response.text);
+              swal({
+                text: "tu mensaje ha sido enviado, gracias!",
+              });
+              setInput({
+                nombre: "",
+                apellido: "",
+                email: "",
+                phone: "",
+                mensaje: "",
+              })
+              
             },
             function (error) {
               console.log("FAILED...", error);
