@@ -1,0 +1,46 @@
+:root {
+    --primary-white: #fff
+    --primary-orange: #f9ab00
+
+}
+.navbar{
+    display:block;
+    background:rgba(240, 239, 237, 0.294) ;
+    color:orange ;
+}
+nav a.nav-link{
+    cursor: pointer;
+}
+
+nav ul li {
+    text-transform: uppercase;
+}
+
+.navbar-nav > li > a {
+    color: orange !important;
+    font-weight: 900;
+}
+.nav-link{
+    color: black !important;
+    margin-right: 0.75rem;
+    justify-content: end;
+    font-weight: 900 !important;
+}
+.navbar-brand{
+    color: orange;
+    font-weight: 900;
+    font-size: 25px;
+    margin-right: 17.25rem !important;
+    max-width: 17.25rem;
+    padding: 0 !important;
+    height: 6rem !important;
+}
+.navbar-nav > li > a.active, .navbar-nav > li > a:focus{
+    border-top: 0.1875rem solid orange;
+
+}
+.titulonav{
+    color: orange!important;
+    margin-left: 50px;
+    margin-top: 20px;
+}

@@ -1,0 +1,35 @@
+.carrousel{
+    background: url('https://www.xtrafondos.com/descargar.php?id=3593&resolucion=3840x2160') no-repeat;
+    display: flex;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    color: orange;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.tamcarrousel{
+    margin-left: 25%;
+    height: 50%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    flex-direction: row;
+}
+.demos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.colum{
+    height:200px;
+}
+.app{
+    color: blue;
+}
