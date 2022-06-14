@@ -26,8 +26,8 @@ const Navbar=()=>{
                     className="navbar-toggler" 
                     type="button" 
                     data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" 
-                    aria-controls="navbarSupportedContent" 
+                    // data-bs-target="#navbarSupportedContent" 
+                    // aria-controls="navbarSupportedContent" 
                     aria-expanded={hamburguer} 
                     aria-label="Toggle navigation"
                 >

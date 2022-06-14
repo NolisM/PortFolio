@@ -17,7 +17,7 @@ const Header=()=>{
                 <div>
                 
                     <button className="btn-main  border bordered">
-                    <a className='curriculum' href={cv} target="_blank" rel="noopener noreferrer" download="cv.pdf"> 
+                    <a className='curriculum' href={cv} target="_blank" rel="noopener noreferrer" download="cv.png"> 
                     Descargar Curriculum Vitae
                     </a>
                     </button>

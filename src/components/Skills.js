@@ -16,7 +16,7 @@ import './Skills.css'
 
 const Skills=()=>{
     return(
-        <div className='container-fluid skills mh-100'>
+        <div className='container-fluid skills '>
 
        
             <div>
@@ -26,7 +26,7 @@ const Skills=()=>{
             <div className="text mt-5 ">
                 <h1 className="soft justify-content-center p-5" >Soft Skills</h1>
                
-                <div class="row align-items-start ms-5 fs-3">
+                <div class="row align-items-start ms-5 ps-5 iconsskills">
                     <div class="col">
                     <FontAwesomeIcon icon={faSpa} style={{color:'orange'}} />
                     Responsabilidad 
@@ -41,22 +41,22 @@ const Skills=()=>{
                     </div>
                     
                 </div>
-                <div class="row align-items-center ms-5 fs-3">
-                    <div class="col">
+                <div class="row align-items-center ms-5 ps-5 iconsskills">
+                    <div class="col-md-4">
                     <FontAwesomeIcon icon={faSpa} style={{color:'orange'}} />
                     Actitud positiva 
                     </div>
-                    <div class="col">
+                    <div class="col-md-4">
                     <FontAwesomeIcon icon={faSpa} style={{color:'orange'}} />
                     Tolerancia a la presión
                     </div>
-                    <div class="col">
+                    <div class="col-md-4">
                     <FontAwesomeIcon icon={faSpa} style={{color:'orange'}} />
                     Capacidad Resolutiva
                     </div>
                     
                 </div>
-                <div class="row align-items-end ms-5 fs-3">
+                <div class="row align-items-end ms-5 ps-5 iconsskills">
                     <div class="col">
                     <FontAwesomeIcon icon={faSpa} style={{color:'orange'}} />
                     Empatía
@@ -72,51 +72,51 @@ const Skills=()=>{
                 </div>
             </div>
 
-            <div className="text mt-5 col-11">
+            <div className="text mt-5 ">
                 <h1 className="soft p-5">Tech Skills</h1>
-                <div className='imgskills ms-5 w-100 justify-content-between '>
+                <div className='imgskills  w-100 justify-content-between '>
                     <div className='fondoimg'>
-                        <img src={javascript} className="img-rounded fondoimg"  width="100" height="100" alt="..."/>
+                        <img src={javascript} className="img-rounded imgS "   alt="..."/>
                         <h5 className='nameskills'>javascript</h5>
                     </div>
                     <div className='fondoimg'>
-                        <img src={html} className="img-rounded fondoimg"  width="100" height="100" alt="..."/>
+                        <img src={html} className="img-rounded imgS "   alt="..."/>
                         <h5 className='nameskills'>Html</h5>
                     </div>
                     <div className='fondoimg'>
-                        <img src={css3} className="img-rounded fondoimg"  width="100" height="100" alt="..."/>
+                        <img src={css3} className="img-rounded imgS"   alt="..."/>
                         <h5 className='nameskills'>Css3</h5>
                     </div>
                     <div className='fondoimg'>
-                        <img src={node} className="img-rounded fondoimg"  width="100" height="100" alt="..."/>
+                        <img src={node} className="img-rounded imgS "   alt="..."/>
                         <h5 className='nameskills'>Node</h5>
                     </div>
                     <div className='fondoimg'>
-                        <img src={icreact} className="img-rounded fondoimg"  width="100" height="100" alt="..."/>
+                        <img src={icreact} className="img-rounded imgS "   alt="..."/>
                         <h5 className='nameskills'>React</h5>
                     </div>
                     <div className='fondoimg'>
-                        <img src={redux} className="img-rounded fondoimg"  width="100" height="100" alt="..."/>
+                        <img src={redux} className="img-rounded imgS"   alt="..."/>
                         <h5 className='nameskills'>Redux</h5>
                     </div>
                     <div className='fondoimg'>
-                        <img src={express} className="img-rounded fondoimg"  width="100" height="100" alt="..."/>
+                        <img src={express} className="img-rounded imgS"  alt="..."/>
                         <h5 className='nameskills'>Express</h5>
                     </div>
                     <div className='fondoimg'>
-                        <img src={sequelize} className="img-rounded fondoimg"  width="100" height="100" alt="..."/>
+                        <img src={sequelize} className="img-rounded imgS"   alt="..."/>
                         <h5 className='nameskills'>Sequelize</h5>
                     </div>
                     <div className='fondoimg'>
-                        <img src={psql} className="img-rounded fondoimg"  width="100" height="100" alt="..."/>
+                        <img src={psql} className="img-rounded imgS"   alt="..."/>
                         <h5 className='nameskills'>PostgreSQL</h5>
                     </div>
                     <div className='fondoimg'>
-                        <img src={firebase} className="img-rounded fondoimg"  width="100" height="100" alt="..."/>
+                        <img src={firebase} className="img-rounded imgS"   alt="..."/>
                         <h5 className='nameskills'>Firebase</h5>
                     </div>
                     <div className='fondoimg'>
-                        <img src={github} className="img-rounded fondoimg"  width="100" height="100" alt="..."/>
+                        <img src={github} className="img-rounded imgS"   alt="..."/>
                         <h5 className='nameskills'>Github</h5>
                     </div>
 

@@ -56,7 +56,7 @@ const MyWork=()=>{
           </div>
           <div className='mt-5'>
               <div className="row justify-content-evenly">
-                  <div className="col-3  border border-warning rounded">
+                  <div className="col-3  border border-warning rounded colum md-4 overflow-auto">
                     <h3><u>Aplicacion del clima</u></h3>
                     <p className="text-break">Esta app consiste en consumir los datos de una Api Externa. En ella se puede buscar El clima de diferentes Ciudades filtrandolas por el nombre y una vez que no se requiere dicha informacion se puede eliminarla del listado.</p>
                     <div className='demos'>
@@ -65,7 +65,7 @@ const MyWork=()=>{
 
                     </div>
                   </div>
-                  <div className="col-3  border border-warning rounded">
+                  <div className="col-3  border border-warning rounded colum md-4 overflow-auto ">
                   <h3><u>Proyecto Individual - The Dogs</u></h3>
                   <p>Este Proyecto Individual fue realizado en #Henry. El cual consistía consumir datos de una Api externa de perros, buscarlos, filtrarlos u ordenarlos, mostrar detalles y crear perros nuevos, interactuando con una base de datos local.</p>
                   <div className='demos'>

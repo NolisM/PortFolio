@@ -72,7 +72,6 @@ const emails = async (nombre,apellido,email,phone,mensaje) => {
                 phone: "",
                 mensaje: "",
               })
-              
             },
             function (error) {
               console.log("FAILED...", error);

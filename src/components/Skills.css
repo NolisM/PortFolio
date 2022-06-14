@@ -3,9 +3,11 @@
     position: relative;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     color: orange;
+    padding-bottom: 8%;
+    
 }
 .textskills{
     font-size: 30px;
@@ -16,30 +18,45 @@
 .soft{
     text-align: center;
     color: orange;
-    font-size: 40px;
+    font-size: 5vh;
     text-decoration: underline;
 }
 .fondoimg{
     background: white;
-    border-radius: 5px;
-    padding: 10px;
+    border-radius: 10%;
+    padding: 0.5%;
+    margin: 5px;
+    height: 15vh;
+    width:13vh;
+    color: orange;
 }
 .imgskills{
-    width: 100vh;
+    width: 100%;
     display: flex;
+    flex-wrap:wrap;
     flex-direction: row;
     justify-content: space-between;
     
 }
 .titleskills{
-    padding-top: 15px;
-    font-size: 50px;
+    padding-top: 2%;
+    font-size: 6vh;
 }
 .nameskills{
     color:black;
     text-align: center;
+    font-size: 2vh;
     
 }
 .one{
     flex-direction: row;
   }
+.iconsskills{
+    font-size: 3vh;
+    justify-content: center;
+  }
+.imgS{
+    margin: 0.5vh;
+    height: 9vh;
+    width:9vh;
+}

@@ -17,7 +17,7 @@ const About=()=>{
             <div className='row'>
                 <img src={fotoperfil} className="col-md-6 float-md-end mb-3 ms-md-3 mi-foto" alt="..."/>
 
-                <p className='text-about mt-5'> Hola!! 👋, Mi nombre es Nolis Maldonado, Desarrolladora Web Full Stack. Soy de Córdoba,Argentina.
+                <p className='text-about'> Hola!! 👋, Mi nombre es Nolis Maldonado, Desarrolladora Web Full Stack. Soy de Córdoba,Argentina.
                     De chica siempre me gusto mucho la programación, me fascina la idea de poder desarrollar proyectos 
                     que simplifiquen las necesidades de las personas.
                     Es por eso que decidí enfocarme, aprender y crecer en este hermoso mundo IT.
