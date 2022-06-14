@@ -26,47 +26,47 @@ const Skills=()=>{
             <div className="text mt-5 ">
                 <h1 className="soft justify-content-center p-5" >Soft Skills</h1>
                
-                <div class="row align-items-start ms-5 ps-5 iconsskills">
-                    <div class="col">
-                    <FontAwesomeIcon icon={faSpa} style={{color:'orange', marginRight:'10px'}} />
+                <div className="row  iconsskills">
+                    <div className="col">
+                    <FontAwesomeIcon className='icon'  icon={faSpa} style={{color:'orange'}} />
                     Responsabilidad 
                     </div>
-                    <div class="col">
-                    <FontAwesomeIcon icon={faSpa} style={{color:'orange', marginRight:'10px'}} />
+                    <div className="col">
+                    <FontAwesomeIcon className='icon' icon={faSpa} style={{color:'orange'}} />
                     Trabajo en equipo
                     </div>
-                    <div class="col">
-                    <FontAwesomeIcon icon={faSpa} style={{color:'orange', marginRight:'10px'}} />
+                    <div className="col">
+                    <FontAwesomeIcon className='icon' icon={faSpa} style={{color:'orange'}} />
                     Autonomía
                     </div>
                     
                 </div>
-                <div class="row align-items-center ms-5 ps-5 iconsskills">
-                    <div class="col-md-4">
-                    <FontAwesomeIcon icon={faSpa} style={{color:'orange', marginRight:'10px'}} />
+                <div class="row  iconsskills">
+                    <div class="col">
+                    <FontAwesomeIcon className='icon' icon={faSpa} style={{color:'orange'}} />
                     Actitud positiva 
                     </div>
-                    <div class="col-md-4">
-                    <FontAwesomeIcon icon={faSpa} style={{color:'orange', marginRight:'10px'}} />
+                    <div class="col">
+                    <FontAwesomeIcon className='icon' icon={faSpa} style={{color:'orange'}} />
                     Tolerancia a la presión
                     </div>
-                    <div class="col-md-4">
-                    <FontAwesomeIcon icon={faSpa} style={{color:'orange', marginRight:'10px'}} />
+                    <div class="col">
+                    <FontAwesomeIcon className='icon' icon={faSpa} style={{color:'orange'}} />
                     Capacidad Resolutiva
                     </div>
                     
                 </div>
-                <div class="row align-items-end ms-5 ps-5 iconsskills">
+                <div class="row  iconsskills">
                     <div class="col">
-                    <FontAwesomeIcon icon={faSpa} style={{color:'orange', marginRight:'10px'}} />
+                    <FontAwesomeIcon className='icon' icon={faSpa} style={{color:'orange',}} />
                     Empatía
                     </div>
                     <div class="col">
-                    <FontAwesomeIcon icon={faSpa} style={{color:'orange', marginRight:'10px'}} />
+                    <FontAwesomeIcon className='icon' icon={faSpa} style={{color:'orange'}} />
                     Respeto a las opiniones
                     </div>
                     <div class="col">
-                    <FontAwesomeIcon icon={faSpa} style={{color:'orange', marginRight:'10px'}} />
+                    <FontAwesomeIcon className='icon' icon={faSpa} style={{color:'orange'}} />
                     Resiliencia
                     </div>
                 </div>

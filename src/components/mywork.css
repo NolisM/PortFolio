@@ -11,6 +11,7 @@
     justify-content: center;
     padding-top: 10px;
     margin: 0px;
+    opacity: 0.95;
 }
 
 .tamcarrousel{
@@ -33,4 +34,5 @@
 }
 .app{
     color: blue;
+    font-size: 4vh;
 }

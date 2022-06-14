@@ -12,7 +12,7 @@ const About=()=>{
         
       
             <div className='Container-fluid about'>
-                    <h1 className='text-center p-5 mb-5'><u>Sobre Mi...</u></h1>
+                    <h1 className='text-center p-5 mb-5 titleAbout'><u>Sobre Mi...</u></h1>
             <div className='row '>
                 <img src={fotoperfil} className="  mi-foto mx-auto align-middle " alt="..."/> 
 

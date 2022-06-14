@@ -7,6 +7,7 @@
     width: 100%;
     color: orange;
     padding-bottom: 8%;
+    opacity: 0.95;
     
 }
 .textskills{
@@ -18,19 +19,20 @@
 .soft{
     text-align: center;
     color: orange;
-    font-size: 5vh;
+    font-size: 4vh;
     text-decoration: underline;
 }
 .fondoimg{
     background: white;
     border-radius: 10%;
-    padding: 0.5%;
+    padding: 0.6%;
     margin: 5px;
     height: 15vh;
     width:13vh;
     color: orange;
 }
 .imgskills{
+    margin-left: 1.5vh;
     width: 100%;
     display: flex;
     flex-wrap:wrap;
@@ -52,11 +54,21 @@
     flex-direction: row;
   }
 .iconsskills{
+    margin-left: 5%;
     font-size: 3vh;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    height: 100%;
+    width: 100%;
     
   }
 .imgS{
     margin: 0.5vh;
     height: 9vh;
     width:9vh;
+    padding-left: 0.1vh;
+}
+.icon{
+    font-size: 2vh;
 }
