@@ -29,7 +29,7 @@ const Skills=()=>{
                 <div className="row  iconsskills">
                     <div className="col">
                     <FontAwesomeIcon className='icon'  icon={faSpa} style={{color:'orange'}} />
-                    Responsabilidad 
+                    Creatividad 
                     </div>
                     <div className="col">
                     <FontAwesomeIcon className='icon' icon={faSpa} style={{color:'orange'}} />
