@@ -14,9 +14,9 @@
 }
 
 .tamcarrousel{
-    margin-left: 25%;
-    height: 50%;
-    width: 50%;
+    /* margin-left: %; */
+    height: 75%;
+    width: 75%;
     display: flex;
     justify-content: center;
     margin-top: 25px;
