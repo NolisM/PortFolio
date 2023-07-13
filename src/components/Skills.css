@@ -1,5 +1,5 @@
-.skills{
-    background: url('https://www.xtrafondos.com/descargar.php?id=3593&resolucion=3840x2160') no-repeat;
+.skills {
+    background-color: black;
     position: relative;
     background-size: cover;
     background-position: center;
@@ -8,52 +8,61 @@
     color: orange;
     padding-bottom: 8%;
     opacity: 0.95;
-    
+
+
 }
-.textskills{
+
+.textskills {
     font-size: 30px;
     color: orange;
     text-align: center;
 
 }
-.soft{
+
+.soft {
     text-align: center;
     color: orange;
     font-size: 4vh;
     text-decoration: underline;
 }
-.fondoimg{
+
+.fondoimg {
     background: white;
     border-radius: 10%;
     padding: 0.6%;
     margin: 5px;
     height: 15vh;
-    width:13vh;
+    width: 13vh;
     color: orange;
 }
-.imgskills{
+
+.imgskills {
     margin-left: 1.5vh;
     width: 100%;
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    
+
 }
-.titleskills{
+
+.titleskills {
     padding-top: 2%;
     font-size: 6vh;
 }
-.nameskills{
-    color:black;
+
+.nameskills {
+    color: black;
     text-align: center;
     font-size: 2vh;
-    
+
 }
-.one{
+
+.one {
     flex-direction: row;
-  }
-.iconsskills{
+}
+
+.iconsskills {
     margin-left: 5%;
     font-size: 3vh;
     display: flex;
@@ -61,14 +70,16 @@
     justify-items: center;
     height: 100%;
     width: 100%;
-    
-  }
-.imgS{
+
+}
+
+.imgS {
     margin: 0.5vh;
     height: 9vh;
-    width:9vh;
+    width: 9vh;
     padding-left: 0.1vh;
 }
-.icon{
+
+.icon {
     font-size: 2vh;
 }

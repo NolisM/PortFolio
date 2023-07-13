@@ -1,6 +1,6 @@
-.contactpage{
+.contactpage {
   position: relative;
-  background: url("https://www.xtrafondos.com/descargar.php?id=3593&resolucion=3840x2160") no-repeat;
+  background-color: black;
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -12,12 +12,12 @@
   opacity: 0.95;
 }
 
-.btn-submit{
+.btn-submit {
   background-color: orange;
   border-color: orange;
 }
 
-.textcontact{
-text-align: center;
+.textcontact {
+  text-align: center;
 
 }

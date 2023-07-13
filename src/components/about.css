@@ -1,30 +1,34 @@
-.about{
-    background: url('https://www.xtrafondos.com/descargar.php?id=3593&resolucion=3840x2160') no-repeat;
+.about {
+    background-color: black;
     position: relative;
     background-size: cover;
     background-position: center;
     height: 100;
     color: orange;
     opacity: 0.95;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
-.mi-foto{
+.mi-foto {
     /* margin-right: 10%;
     margin-left: 10%; */
     /* margin-top: 0%; */
     border-radius: 50%;
     height: 50vh;
-    width:50vh;
+    width: 50vh;
     /* margin-top: -50%; */
 }
-.text-content{
+
+.text-content {
     height: 100vh;
     display: flex;
     flex-direction: row;
     margin: 12px;
-    color:orange
+    color: orange
 }
-.text-about{
+
+.text-about {
     margin-right: 10%;
     margin-top: 10%;
     margin-bottom: 20%;
@@ -37,8 +41,9 @@
     font-size: 3vh;
     text-align: justify;
 
-} 
-.titleAbout{
+}
+
+.titleAbout {
     padding-top: 2%;
     font-size: 6vh;
 }

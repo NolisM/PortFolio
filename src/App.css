@@ -2,12 +2,10 @@
   scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  
-}
+@media (prefers-reduced-motion: no-preference) {}
 
 .App-header {
-  background-color: #282c34;
+  background-color: black;
   min-height: 100vh;
   /* display: flex; */
   flex-direction: column;
@@ -25,21 +23,24 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
+
 /****header****/
-.headerpage{
-  
+.headerpage {
+
   position: relative;
-  background: url("https://www.xtrafondos.com/descargar.php?id=3593&resolucion=3840x2160") no-repeat;
+  background-color: black;
   background-size: cover;
   background-position: center;
   height: 100vh;
   opacity: 0.95;
 }
-.info{
+
+.info {
   /* margin-top: 12px; */
   top: 0;
   left: 0;
@@ -50,43 +51,47 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family:sans-serif ;
+  font-family: sans-serif;
   color: black;
   font-weight: 900;
 }
-.typed-text{
+
+.typed-text {
   margin-top: 800px;
-  font-size:25px;
+  font-size: 25px;
 
 }
-.btn-main{
-  color:rgb(245, 245, 248);
+
+.btn-main {
+  color: rgb(245, 245, 248);
   text-transform: uppercase;
   border-radius: 10px;
   font-size: 14px;
-  padding:10px 12px 12px 12px;
+  padding: 10px 12px 12px 12px;
   background-color: rgba(255, 166, 0, 0.333);
 }
-.btn-main:hover{
+
+.btn-main:hover {
   background-color: rgba(255, 99, 2, 0.608);
-  color:white;
+  color: white;
   transition: .2s;
 
 }
-.textheader{
+
+.textheader {
   font-size: 50px;
   font-weight: 900;
   color: orange;
 }
 
-.text-transformer{
+.text-transformer {
   color: whitesmoke;
   font-size: 25px;
 }
 
 
-.curriculum{
+.curriculum {
   color: white;
   font-size: 14px;
-  
+
 }
