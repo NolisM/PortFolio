@@ -1,4 +1,4 @@
-.Container-fluid.about {
+.about {
     background-color: rgb(243, 213, 156);
     position: relative;
     background-size: cover;
@@ -85,6 +85,11 @@
         margin-top: 5%;
         color: orange;
     }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 480px) {
@@ -106,5 +111,10 @@
         align-items: center;
         margin-top: 5%;
         color: orange;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
     }
 }

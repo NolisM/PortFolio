@@ -36,30 +36,30 @@ const Skills = () => {
 
         </div>
         <div class=" iconsskills ms-5">
-          <div class="ms-5">
+          <div class="iconName ms-5">
             <FontAwesomeIcon className='icon' icon={faSpa} style={{ color: 'orange' }} />
             Actitud positiva
           </div>
-          <div class="ms-5">
+          <div class="iconName ms-5">
             <FontAwesomeIcon className='icon' icon={faSpa} style={{ color: 'orange' }} />
             Tolerancia a la presión
           </div>
-          <div class="ms-5">
+          <div class="iconName ms-5">
             <FontAwesomeIcon className='icon' icon={faSpa} style={{ color: 'orange' }} />
             Capacidad Resolutiva
           </div>
 
         </div>
         <div class="  iconsskills  ms-5 ">
-          <div class="ms-5">
+          <div class="iconName ms-5">
             <FontAwesomeIcon className='icon' icon={faSpa} style={{ color: 'orange', }} />
             Empatía
           </div>
-          <div class="ms-5">
+          <div class="iconName ms-5">
             <FontAwesomeIcon className='icon' icon={faSpa} style={{ color: 'orange' }} />
             Respeto a las opiniones
           </div>
-          <div class="ms-5">
+          <div class="iconName ms-5">
             <FontAwesomeIcon className='icon' icon={faSpa} style={{ color: 'orange' }} />
             Resiliencia
           </div>

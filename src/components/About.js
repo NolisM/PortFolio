@@ -7,7 +7,7 @@ import GH from '../images/icons8-github-32.png'
 
 const About = () => {
     return (
-        <div className="Container-fluid about px-3">
+        <div className=" about px-3">
             <div className='ImageRedes'>
                 <img
                     src={fotoperfil}

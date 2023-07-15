@@ -102,3 +102,60 @@
 .icon {
     font-size: 2vh;
 }
+
+@media (max-width: 768px) {
+    .softSkills {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .imgskills {
+        margin: 0 !important;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .iconsskills {
+        margin: 0 !important;
+    }
+
+    .iconsskills.ms-5 {
+        margin: 0 !important;
+    }
+
+    .iconName.ms-5 {
+        margin: 0 !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .softSkills {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .imgskills {
+        margin: 0 !important;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .iconsskills {
+        margin: 0 !important;
+    }
+
+    .iconsskills.ms-5 {
+        margin: 0 !important;
+    }
+
+    .iconName.ms-5 {
+        margin: 0 !important;
+    }
+
+}
