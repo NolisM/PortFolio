@@ -8,6 +8,13 @@
     color: orange;
 }
 
+.navbarContainer {
+    position: relative;
+    background-color: black;
+}
+
+
+
 nav a.nav-link {
     cursor: pointer;
 }
@@ -48,4 +55,19 @@ nav ul li {
     color: orange !important;
     margin-left: 50px;
     margin-top: 20px;
+}
+
+.box {
+    transform: translateX(400%);
+    transition: transform 0.6s ease;
+}
+
+.box:nth-of-type(even) {
+    transform: translateX(-400%);
+    transition: transform 0.6s ease;
+}
+
+.box.show {
+    transform: translateX(0);
+    transition: transform 0.6s ease;
 }

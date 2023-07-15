@@ -1,23 +1,26 @@
 .carrousel {
-    background-color: black;
-    display: flex;
+    background-color: rgb(243, 213, 156);
     position: relative;
     background-size: cover;
     background-position: center;
-    height: 100%;
-    width: 100%;
-    color: orange;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 10px;
-    margin: 0px;
+    color: black;
     opacity: 0.95;
+    padding: 0;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    margin-top: 10%;
+    padding-bottom: 5%;
 }
 
 .tamcarrousel {
     /* margin-left: %; */
     height: 75%;
-    width: 75%;
+    width: 90%;
     display: flex;
     justify-content: center;
     margin-top: 25px;
@@ -33,6 +36,10 @@
 .colum {
     height: 200px;
     font-size: 2vh;
+}
+
+.text-center {
+    color: orange;
 }
 
 .app {

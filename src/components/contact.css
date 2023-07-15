@@ -1,15 +1,20 @@
 .contactpage {
+  background-color: rgb(243, 213, 156);
   position: relative;
-  background-color: black;
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  width: 100%;
-  color: orange;
-  justify-content: space-between;
-  margin: 0%;
-  padding: 0%;
+  color: black;
   opacity: 0.95;
+  padding: 0;
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  margin-top: 10%;
+  padding-bottom: 5%;
 }
 
 .btn-submit {
@@ -19,5 +24,10 @@
 
 .textcontact {
   text-align: center;
+  color: orange;
 
+}
+
+.img {
+  width: 5%;
 }

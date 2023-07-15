@@ -1,18 +1,18 @@
 .App {
   scroll-behavior: smooth;
+
 }
 
 @media (prefers-reduced-motion: no-preference) {}
 
 .App-header {
-  background-color: black;
   min-height: 100vh;
   /* display: flex; */
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
 .App-link {
@@ -31,12 +31,9 @@
 
 /****header****/
 .headerpage {
-
   position: relative;
-  background-color: black;
   background-size: cover;
   background-position: center;
-  height: 100vh;
   opacity: 0.95;
 }
 
@@ -63,7 +60,7 @@
 }
 
 .btn-main {
-  color: rgb(245, 245, 248);
+  color: black;
   text-transform: uppercase;
   border-radius: 10px;
   font-size: 14px;
@@ -73,7 +70,7 @@
 
 .btn-main:hover {
   background-color: rgba(255, 99, 2, 0.608);
-  color: white;
+  color: black;
   transition: .2s;
 
 }
@@ -85,13 +82,13 @@
 }
 
 .text-transformer {
-  color: whitesmoke;
+  color: black;
   font-size: 25px;
 }
 
 
 .curriculum {
-  color: white;
+  color: black;
   font-size: 14px;
 
 }
