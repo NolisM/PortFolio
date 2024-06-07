@@ -28,7 +28,8 @@
 .soft {
     text-align: center;
     color: orange;
-    font-size: 4vh;
+    font-size: 5vh;
+    font-weight: 700;
     text-decoration: underline;
 }
 

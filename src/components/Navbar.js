@@ -49,7 +49,7 @@ const Navbar = () => {
 
         <div className='Container d-flex justify-content-between'>
 
-          <a className="navbar-brand  font-italic font-weight-bold titulonav ml-auto pt-3" href="#">Nolis Maldonado</a>
+          <p className="navbar-brand  font-italic font-weight-bold titulonav ml-auto pt-3" >Nolis Maldonado</p>
           <div className='d-flex flex-column'>
 
             <button

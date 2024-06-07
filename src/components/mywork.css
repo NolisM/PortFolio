@@ -14,8 +14,111 @@
     flex-direction: column;
     border-radius: 20px;
     margin-top: 10%;
-    padding-bottom: 5%;
+    /* padding-bottom: 5%; */
 }
+
+.ContentCard {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 5%;
+
+
+}
+
+.card {
+    width: 30%;
+    margin: 1%;
+    padding: 1%;
+    background-color: rgba(233, 204, 111, 0.1);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 8%;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: all 300ms;
+
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card:hover .coverCard img {
+    transform: scale(1.1);
+}
+
+.coverCard {
+    width: 100%;
+    height: 80%;
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+.coverCard img {
+    width: 110%;
+    transition: all 300ms;
+}
+
+.card h1 {
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 2%;
+    color: black;
+    text-align: center;
+
+}
+
+.card p {
+    margin-top: 2%;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    letter-spacing: 0.5px;
+}
+
+.footerCard {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+    color: black;
+    justify-content: space-between;
+
+}
+
+.footerCard a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .ContentCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        padding: 3%;
+        margin-bottom: 3%
+    }
+
+}
+
+
+
+
+
+
+
+
 
 .tamcarrousel {
     /* margin-left: %; */
