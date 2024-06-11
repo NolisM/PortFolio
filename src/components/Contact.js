@@ -84,7 +84,7 @@ const Contact = () => {
     <div className='container-fluid contactpage '>
       <div className='d-flex flex-row justify-content-center align-items-center '>
         <img src={contact} className="img-rounded img " alt="..." />
-        <h1 className='textcontact pt-5' ><u>Contactame!!...</u></h1>
+        <h1 className='textcontact pt-5' ><u>Contactame...</u></h1>
       </div>
       <div className='mx-4 '>
 
