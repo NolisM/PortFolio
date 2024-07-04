@@ -65,9 +65,7 @@ const MyWork = () => {
           <div className='coverCard'>
             <img src={tourfy} alt='' />
           </div>
-          <p className='description'>Como parte de un proyecto grupal en el curso de Codo a Codo, desarrollamos una página web interactiva con HTML5, CSS3 y JavaScript (ES6) para promover el turismo en Córdoba, Argentina. La página destaca destinos populares y promociones, obteniendo la información directamente de una base de datos gestionada con SQL.
-
-            El backend de la aplicación fue desarrollado utilizando Python Flask, lo que permitió manejar las solicitudes de los usuarios y servir los datos de manera eficiente. Esto nos permitió tener un control total sobre los datos y las funcionalidades, sin depender de servicios externos.</p>
+          <p className='description'>Como parte de un proyecto grupal en el curso de Codo a Codo, desarrollamos una página web interactiva con HTML5, CSS3 y JavaScript (ES6) para promover el turismo en Córdoba, Argentina. La página destaca destinos populares y promociones, obteniendo la información directamente de una base de datos gestionada con SQL. El backend fue desarrollado con Python y Flask, asegurando un manejo eficiente de los datos sin depender de servicios externos.</p>
           <div className='footerCard'>
             <a href='https://github.com/NolisM/Servicios-Random'>Repositorio</a>
             <a href='https://servicios-random.vercel.app/#inicio'>Despliegue</a>
