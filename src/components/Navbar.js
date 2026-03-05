@@ -1,107 +1,81 @@
-import React, { useState, useRef, useEffect } from 'react'
-import About from "./About";
-import Contact from "./Contact";
-import MyWork from "./MyWork";
-import Skills from "./Skills";
-import "./navbar.css"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import React, { useState, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import './navbar.css';
 
 const Navbar = () => {
-  const [hamburguer, setHamburguer] = useState(false)
-  const boxesRef = useRef([]);
-  console.log(boxesRef)
-  console.log('este', window.addEventListener("scroll", checkBoxes))
+  const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
+  // Detectar scroll para cambiar estilo del navbar
   useEffect(() => {
-    console.log('entro al useefect')
-    window.addEventListener("scroll", checkBoxes);
-    checkBoxes();
-
-    return () => {
-      window.removeEventListener("scroll", checkBoxes);
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
     };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleClickHamburguer = () => {
-    setHamburguer(!hamburguer)
-  }
+  // Cerrar menú al hacer clic en un link (mobile)
+  const handleLinkClick = () => {
+    setIsOpen(false);
+  };
 
-
-  function checkBoxes() {
-    const boxes = boxesRef.current;
-    const triggerBottom = window.innerHeight / 5 * 4;
-
-    boxes.forEach((box) => {
-
-      const boxTop = box.getBoundingClientRect().top;
-
-      if (boxTop < triggerBottom) {
-        box.classList.add("show");
-      } else {
-        box.classList.remove("show");
-      }
-    });
-  }
   return (
-    <div className='navbarContainer'>
-      <nav className=" navbar sticky-top navbar-expand-lg navbar-dark  scrolling-navbar">
+    <nav className={`navbar ${scrolled ? 'navbar-scrolled' : ''}`}>
+      <div className="nav-container">
+        {/* Logo */}
+        <a href="#home" className="nav-logo">
+          Nolis Maldonado
+        </a>
 
-        <div className='Container d-flex justify-content-between'>
+        {/* Botón hamburguesa (mobile) */}
+        <button
+          className="nav-toggle"
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label="Toggle menu"
+        >
+          <FontAwesomeIcon icon={faBars} />
+        </button>
 
-          <a className="navbar-brand  font-italic font-weight-bold titulonav ml-auto pt-3" href="#">Nolis Maldonado</a>
-          <div className='d-flex flex-column'>
-
-            <button
-              onClick={handleClickHamburguer}
-              className="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              aria-expanded={hamburguer}
-              aria-label="Toggle navigation"
-            >
-              <FontAwesomeIcon icon={faBars} style={{ color: 'orange' }} />
-            </button>
-            <div className={`${!hamburguer && 'collapse'} navbar-collapse`} id="navbarSupportedContent">
-              <ul className="navbar-nav ms-auto">
-                <li className="nav-item active">
-                  <a className="nav-link text-white" href="#header">Home</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link text-white" href="#about">Sobre Mi</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link text-white" href="#skills">Mis Skills</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link text-white" href="#work">Mis Proyectos</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link text-white" href="#contact">Contacto</a>
-                </li>
-
-              </ul>
-
-            </div>
-          </div>
+        {/* Menú de navegación */}
+        <div className={`nav-menu ${isOpen ? 'active' : ''}`}>
+          <ul className="nav-list">
+            <li className="nav-item">
+              <a href="#home" onClick={handleLinkClick} className="nav-link">
+                Home
+              </a>
+            </li>
+            <li className="nav-item">
+              <a href="#about" onClick={handleLinkClick} className="nav-link">
+                Sobre Mí
+              </a>
+            </li>
+            <li className="nav-item">
+              <a href="#skills" onClick={handleLinkClick} className="nav-link">
+                Skills
+              </a>
+            </li>
+            <li className="nav-item">
+              <a href="#projects" onClick={handleLinkClick} className="nav-link">
+                Proyectos
+              </a>
+            </li>
+            <li className="nav-item">
+              <a href="#contact" onClick={handleLinkClick} className="nav-link">
+                Contacto
+              </a>
+            </li>
+          </ul>
         </div>
+      </div>
+    </nav>
+  );
+};
 
-      </nav>
-
-      <div id="about" className=" box" ref={(el) => (boxesRef.current[0] = el)}>
-        <About title="About Me" className="about" />
-      </div>
-      <div id="skills" style={{ marginRight: '10%', marginLeft: '10%' }} className=" box" ref={(el) => (boxesRef.current[1] = el)}>
-        <Skills title="My Skills" className="skills " />
-      </div>
-      <div id="work" style={{ marginRight: '10%', marginLeft: '10%' }} className=" box" ref={(el) => (boxesRef.current[2] = el)}>
-        <MyWork title="My Work" className="container " />
-      </div>
-      <div id="contact" style={{ marginRight: '10%', marginLeft: '10%' }} className=" box" ref={(el) => (boxesRef.current[3] = el)}>
-        <Contact title="Contact Me" className="contact " />
-      </div>
-    </div>
-  )
-}
-
-export default Navbar
+export default Navbar;

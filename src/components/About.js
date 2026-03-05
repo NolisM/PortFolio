@@ -1,80 +1,49 @@
 import React from 'react';
 import fotoperfil from '../images/fotoperfil.jpg';
 import './about.css';
-import Header from './Header';
-import lkd from '../images/icons8-linkedin-32.png'
-import GH from '../images/icons8-github-32.png'
 
 const About = () => {
     return (
-        <div className=" about px-3">
-            <div className='ImageRedes'>
-                <img
-                    src={fotoperfil}
-                    className="mi-foto mx-auto align-middle"
-                    alt="Foto de perfil"
-                />
-                <div className='redes'>
-
-                    <div className=''>
-                        <a href="https://www.linkedin.com/in/nolis-maldonado/" target="_blank">
-                            <img src={lkd} className="img-rounded  " alt="..." />
-                        </a>
+        <section id="about" className="about-section">
+            <div className="container">
+                <h2 className="section-title">Sobre Mí</h2>
+                <div className="about-content">
+                    <div className="about-image">
+                        <img src={fotoperfil} alt="Nolis Maldonado" className="profile-image" />
+                        <div className="social-links">
+                            <a href="https://github.com/NolisM" target="_blank" rel="noopener noreferrer">
+                                <i className="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://linkedin.com/in/nolis-maldonado" target="_blank" rel="noopener noreferrer">
+                                <i className="fab fa-linkedin"></i> LinkedIn
+                            </a>
+                        </div>
                     </div>
-                    <div className=''>
-                        <a href="https://github.com/NolisM" target="_blank">
-                            <img src={GH} className="img-rounded  " alt="..." />
-                        </a>
+                    <div className="about-text">
+                        <h3>Full Stack Developer con màs de3 años de experiencia</h3>
+
+                        <p>
+                            Me gusta crear soluciones digitales que <strong>optimizan procesos y mejoran la eficiencia operativa</strong>.
+                            Mi enfoque combina el desarrollo técnico con una comprensión de las necesidades del negocio,
+                            buscando siempre traducir requerimientos complejos en herramientas funcionales y escalables.
+                        </p>
+                        <p>
+                            He trabajado en <strong>entornos laborales reales</strong> desarrollando sistemas de gestión interna,
+                            automatizaciones para equipos comerciales y herramientas administrativas. También participé
+                            en proyectos desde cero hasta producción, colaborando en equipos multidisciplinarios con
+                            diseñadores, QAs y product managers.
+                        </p>
+                        <p>
+                            Disfruto del <strong>trabajo colaborativo</strong>, la mejora continua y construir productos que
+                            realmente marquen la diferencia en el día a día de las personas.
+                        </p>
+
+
                     </div>
                 </div>
-
             </div>
-            <div className="text-content mx-2">
-                <Header />
-                <p className="text-about my-2">
-                    Desarrolladora apasionada, proactiva, comprometida y en constante aprendizaje.
-                    Con habilidades blandas muy valoradas en el mundo laboral.
-                </p>
-                <p className="text-about">
-                    Con gran habilidad para estar actualizada en un mundo tecnológico en constante evolución y compromiso con la excelencia en el trabajo.
-
-                </p>
-
-            </div>
-        </div>
+        </section>
     );
 };
 
 export default About;
-
-
-
-// import React from 'react'
-// import mifoto from '../images/mifoto.jpg'
-// import fotoperfil from '../images/fotoperfil.jpg'
-// import './about.css'
-
-
-// const About = () => {
-
-
-//     return (
-
-
-
-//         <div className='Container-fluid about'>
-//             <h1 className='text-center p-5 mb-5 titleAbout'><u>Sobre Mi...</u></h1>
-//             <div className='text-content'>
-//                 <img src={fotoperfil} className="  mi-foto mx-auto align-middle " alt="..." />
-
-//                 <p className='text-about mx-auto'> Hola!! 👋, Soy Nolis Maldonado, Desarrolladora Web Full Stack.
-//                     Soy una persona apasionada, proactiva, comprometida y en constante aprendizaje, con experiencia en tecnologías de Front-End y Back-End y habilidades blandas muy valoradas en el mundo laboral. Poseo una gran capacidad para aprender y adaptarme rápidamente a nuevas tecnologías y situaciones, lo que me ha permitido abordar con éxito diferentes proyectos y desafíos técnicos. Esto demuestra mi habilidad para mantenerme actualizada en un mundo tecnológico en constante evolución y mi compromiso con la excelencia en mi trabajo.
-//                 </p>
-
-//             </div>
-//         </div>
-
-//     )
-// }
-
-// export default About

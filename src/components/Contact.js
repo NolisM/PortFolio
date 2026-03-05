@@ -1,125 +1,207 @@
-import React from 'react'
-import { useState } from 'react'
-import emailjs from "@emailjs/browser";
+import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import emailkeys from '../emailkeys';
 import swal from 'sweetalert';
-import contact from '../images/contact-chatting-communication-svgrepo-com.svg'
-import "./contact.css"
+import './contact.css';
 
 const Contact = () => {
-  const [input, setInput] = useState({
-    nombre: "",
-    apellido: "",
-    email: "",
-    phone: "",
-    mensaje: "",
-  })
+  const [formData, setFormData] = useState({
+    nombre: '',
+    apellido: '',
+    email: '',
+    phone: '',
+    mensaje: ''
+  });
 
+  const [sending, setSending] = useState(false);
+  const [alert, setAlert] = useState(null);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('input', input)
-    emails(input.nombre, input.apellido, input.email, input.phone, input.mensaje)
-  }
-
-
-
-  function handleChange(e) {
-    setInput({
-      ...input,
-      [e.target.name]: e.target.value,
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
     });
+  };
 
-    console.log('como va guardando el input', input);
-  }
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setSending(true);
+    setAlert(null);
 
-
-
-  const emails = async (nombre, apellido, email, phone, mensaje) => {
-
-    var templateParams = {
-      from_name: nombre,
-      from_email: email,
-      reply_to: email,
-      message: `¡Hola! 👋
-      
-                    📢 ${nombre} Te  ha escrito el siguiente mensaje desde tu portfolio. 
-                    ${mensaje}. 
-                    nombre:${nombre}
-                    apellido:${apellido}
-                    telefono:${phone}
-                  🐾🥰
-      
-                    Suerte!!!😉`,
+    const templateParams = {
+      from_name: `${formData.nombre} ${formData.apellido}`,
+      from_email: formData.email,
+      phone: formData.phone,
+      message: formData.mensaje,
+      to_name: 'Nolis'
     };
 
-    emailjs
-      .send(
+    try {
+      await emailjs.send(
         emailkeys.service_id,
         emailkeys.templateMp_id,
         templateParams,
         emailkeys.public_key
-      )
-      .then(
-        function (response) {
-          console.log("SUCCESS!", response.status, response.text);
-          swal({
-            text: "tu mensaje ha sido enviado, gracias!",
-          });
-          setInput({
-            nombre: "",
-            apellido: "",
-            email: "",
-            phone: "",
-            mensaje: "",
-          })
-        },
-        function (error) {
-          console.log("FAILED...", error);
-        }
       );
+
+      swal({
+        title: '¡Mensaje enviado!',
+        text: 'Gracias por contactarme. Te responderé a la brevedad.',
+        icon: 'success',
+        button: 'Aceptar'
+      });
+
+      setFormData({
+        nombre: '',
+        apellido: '',
+        email: '',
+        phone: '',
+        mensaje: ''
+      });
+    } catch (error) {
+      console.error('Error:', error);
+      swal({
+        title: 'Error',
+        text: 'Hubo un problema al enviar el mensaje. Intentalo de nuevo.',
+        icon: 'error',
+        button: 'Aceptar'
+      });
+    } finally {
+      setSending(false);
+    }
   };
+
   return (
+    <section id="contact" className="contact-section">
+      <div className="contact-container">
+        <div className="contact-header">
+          <h2>Contactame</h2>
+          <p>
+            ¿Tenés un proyecto en mente? ¿Querés trabajar conmigo?
+            ¡Hablemos! Estoy disponible para oportunidades laborales y freelance.
+          </p>
+        </div>
 
-    <div className='container-fluid contactpage '>
-      <div className='d-flex flex-row justify-content-center align-items-center '>
-        <img src={contact} className="img-rounded img " alt="..." />
-        <h1 className='textcontact pt-5' ><u>Contactame!!...</u></h1>
+        <div className="contact-info">
+          <a href="mailto:nolis.maldonado@email.com" className="contact-info-item">
+            <div className="contact-info-icon">
+              <i className="far fa-envelope"></i>
+            </div>
+            <div className="contact-info-text">
+              <span className="contact-info-label">Email</span>
+              <span className="contact-info-value">nolis@email.com</span>
+            </div>
+          </a>
+
+          <a href="https://linkedin.com/in/nolis-maldonado" target="_blank" rel="noopener noreferrer" className="contact-info-item">
+            <div className="contact-info-icon">
+              <i className="fab fa-linkedin-in"></i>
+            </div>
+            <div className="contact-info-text">
+              <span className="contact-info-label">LinkedIn</span>
+              <span className="contact-info-value">/in/nolis-maldonado</span>
+            </div>
+          </a>
+
+          <a href="https://github.com/NolisM" target="_blank" rel="noopener noreferrer" className="contact-info-item">
+            <div className="contact-info-icon">
+              <i className="fab fa-github"></i>
+            </div>
+            <div className="contact-info-text">
+              <span className="contact-info-label">GitHub</span>
+              <span className="contact-info-value">/NolisM</span>
+            </div>
+          </a>
+        </div>
+
+        <form onSubmit={handleSubmit} className="contact-form">
+          <div className="form-row">
+            <div className="form-group">
+              <label htmlFor="nombre">Nombre <span>*</span></label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                value={formData.nombre}
+                onChange={handleChange}
+                className="form-control"
+                placeholder="Tu nombre"
+                required
+              />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="apellido">Apellido <span>*</span></label>
+              <input
+                type="text"
+                id="apellido"
+                name="apellido"
+                value={formData.apellido}
+                onChange={handleChange}
+                className="form-control"
+                placeholder="Tu apellido"
+                required
+              />
+            </div>
+          </div>
+
+          <div className="form-row">
+            <div className="form-group">
+              <label htmlFor="email">Email <span>*</span></label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                className="form-control"
+                placeholder="tu@email.com"
+                required
+              />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="phone">Teléfono</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
+                className="form-control"
+                placeholder="+54 351 1234567"
+              />
+            </div>
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="mensaje">Mensaje <span>*</span></label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              value={formData.mensaje}
+              onChange={handleChange}
+              className="form-control"
+              placeholder="Contame sobre tu proyecto o propuesta..."
+              required
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            className="btn-submit"
+            disabled={sending}
+          >
+            {sending ? (
+              <>Enviando...</>
+            ) : (
+              <>Enviar Mensaje <i className="fas fa-paper-plane"></i></>
+            )}
+          </button>
+        </form>
       </div>
-      <div className='mx-4 '>
+    </section>
+  );
+};
 
-        <h5 className='ms-5 pt-5'>Disponible para discutir oportunidades laborales, tanto a tiempo completo como como freelance. No dudes en contactarme. Abierta a escuchar propuestas!!.</h5>
-      </div>
-
-      <form onSubmit={(e) => handleSubmit(e)} className='row border border-warning border-5 rounded col-md-11 p-3 g-3 m-5  ms-5 justify-content-center'>
-        <div className='col-md-6'>
-          <label name='nombre' className='form-Label'>Nombre</label>
-          <input type='text' name='nombre' value={input.nombre} onChange={(e) => handleChange(e)} className='form-control' id='nombre' required />
-        </div>
-        <div className='col-md-6'>
-          <label name='apellido' className='form-Label'>Apellido</label>
-          <input type='text' name='apellido' value={input.apellido} onChange={(e) => handleChange(e)} className='form-control' id='apellido' required />
-        </div>
-        <div className='col-md-8'>
-          <label name='email' className='form-Label'>E-mail</label>
-          <input type='email' name='email' value={input.email} onChange={(e) => handleChange(e)} className='form-control' id='email' required />
-        </div>
-        <div className='col-md-4'>
-          <label name='phone' className='form-Label'>Telefono</label>
-          <input type='text' name="phone" value={input.phone} onChange={(e) => handleChange(e)} className='form-control' id='phone' placeholder='+54(351)3899755' />
-        </div>
-        <div className='col-md-12'>
-          <label name='mensaje' className='form-Label'>Mensaje</label>
-          <textarea className='form-control' name='mensaje' value={input.mensaje} onChange={(e) => handleChange(e)} id='mensaje' required></textarea>
-        </div>
-        <div className='col-md-12'>
-          <button type='submit' className='btn btn-primary btn-submit'>Enviar</button>
-
-        </div>
-      </form>
-    </div>
-
-  )
-}
-
-export default Contact
+export default Contact;

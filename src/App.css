@@ -1,96 +1,66 @@
-.App {
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-
-
+:root {
+  --primary: #f97316;
+  --primary-dark: #ea580c;
+  --primary-light: #fb923c;
+  --dark: #0f172a;
+  --darker: #020617;
+  --light: #f8fafc;
+  --gray: #64748b;
+  --light-gray: #e2e8f0;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {}
-
-.App-header {
-  min-height: 100vh;
-  /* display: flex; */
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: black;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-link {
-  color: #61dafb;
+body {
+  font-family: var(--font-sans);
+  color: var(--dark);
+  background-color: var(--light);
+  line-height: 1.6;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-/****header****/
-.headerpage {
+section {
+  padding: 80px 0;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
   position: relative;
-  background-size: cover;
-  background-position: center;
-  opacity: 0.95;
+  display: inline-block;
+  color: var(--dark);
 }
 
-.info {
-  /* margin-top: 12px; */
-  top: 0;
+h2:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
   left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-family: sans-serif;
-  color: black;
-  font-weight: 900;
+  width: 60px;
+  height: 4px;
+  background: var(--primary);
+  border-radius: 2px;
 }
 
-.typed-text {
-  margin-top: 800px;
-  font-size: 25px;
-
-}
-
-.btn-main {
-  color: black;
-  text-transform: uppercase;
-  border-radius: 10px;
-  font-size: 14px;
-  padding: 10px 12px 12px 12px;
-  background-color: rgba(255, 166, 0, 0.333);
-}
-
-.btn-main:hover {
-  background-color: rgba(255, 99, 2, 0.608);
-  color: black;
-  transition: .2s;
-
-}
-
-.textheader {
-  font-size: 50px;
-  font-weight: 900;
-  color: orange;
-}
-
-.text-transformer {
-  color: black;
-  font-size: 25px;
-}
-
-
-.curriculum {
-  color: black;
-  font-size: 14px;
-
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
