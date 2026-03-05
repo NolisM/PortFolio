@@ -60,7 +60,7 @@ const Footer = () => {
                                 <i className="far fa-envelope"></i>
                             </a>
                             <a
-                                href="#"
+                                href="https://wa.me/543513062877"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="social-icon"
