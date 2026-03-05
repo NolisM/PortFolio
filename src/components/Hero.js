@@ -34,8 +34,8 @@ const Hero = () => {
                             <span className="stat-label">Proyectos</span>
                         </div>
                         <div className="stat-card">
-                            <span className="stat-number">15</span>
-                            <span className="stat-label">Operadoras</span>
+                            <span className="stat-number">+5</span>
+                            <span className="stat-label">Tecnologías</span>
                         </div>
                     </div>
                 </div>
