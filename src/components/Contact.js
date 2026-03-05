@@ -14,7 +14,7 @@ const Contact = () => {
   });
 
   const [sending, setSending] = useState(false);
-  const [alert, setAlert] = useState(null);
+
 
   const handleChange = (e) => {
     setFormData({
