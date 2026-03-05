@@ -26,7 +26,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setSending(true);
-    setAlert(null);
+
 
     const templateParams = {
       from_name: `${formData.nombre} ${formData.apellido}`,
