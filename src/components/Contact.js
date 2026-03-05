@@ -89,7 +89,7 @@ const Contact = () => {
             </div>
             <div className="contact-info-text">
               <span className="contact-info-label">Email</span>
-              <span className="contact-info-value">nolis@email.com</span>
+              <span className="contact-info-value">nolis51maldonado@gmail.com</span>
             </div>
           </a>
 
