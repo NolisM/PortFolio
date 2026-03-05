@@ -81,10 +81,16 @@
     line-height: 1.2;
 }
 
+<<<<<<< HEAD
 .highlight-text {
     font-size: 1rem;
     color: var(--gray);
 }
+=======
+    .text-about {
+        font-size: 3vh;
+    }
+>>>>>>> 82c8a20e28dec7b77b0fc5e672ac212c24cbebae
 
 @media (max-width: 768px) {
     .about-content {
