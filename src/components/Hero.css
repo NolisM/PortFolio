@@ -209,6 +209,24 @@
     }
 }
 
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.hero-title::after {
+    content: '|';
+    animation: blink 1s infinite;
+    margin-left: 2px;
+}
+
 @media (max-width: 480px) {
     .hero-buttons {
         flex-direction: column;

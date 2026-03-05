@@ -1,5 +1,4 @@
 import React from 'react';
-import Typed from "react-typed";
 import './Hero.css';
 
 const Hero = () => {
@@ -11,19 +10,7 @@ const Hero = () => {
                     <div className="hero-text">
                         <span className="hero-greeting">👋 Hola, soy</span>
                         <h1 className="hero-name">Nolis Maldonado</h1>
-                        <h2 className="hero-title">
-                            <Typed
-                                strings={[
-                                    "Full Stack Developer",
-                                    "Especialista en Automatizaciones",
-                                    "+3 años de experiencia",
-                                    "Apasionada por el impacto real"
-                                ]}
-                                typeSpeed={50}
-                                backSpeed={30}
-                                loop
-                            />
-                        </h2>
+                        <h2 className="hero-title">Full Stack Developer</h2>
                         <p className="hero-description">
                             Full Stack Developer con mas de 3 años de experiencia creando soluciones digitales.
                             Actualmente colaboro en el desarrollo de herramientas de automatización
