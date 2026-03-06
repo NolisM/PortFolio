@@ -30,7 +30,7 @@ const Hero = () => {
                             <span className="stat-label">Años experiencia</span>
                         </div>
                         <div className="stat-card">
-                            <span className="stat-number">+10</span>
+                            <span className="stat-number">+20</span>
                             <span className="stat-label">Proyectos</span>
                         </div>
                         <div className="stat-card">
