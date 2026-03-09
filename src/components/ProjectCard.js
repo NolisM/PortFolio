@@ -58,11 +58,11 @@ const ProjectCard = ({ project }) => {
                             🌐 Demo Online
                         </a>
                     )}
-                    {project.github && (
+                    {/* {project.github && (
                         <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn-github">
                             📁 Código
                         </a>
-                    )}
+                    )} */}
                 </div>
 
                 {showVideo && project.demo && (

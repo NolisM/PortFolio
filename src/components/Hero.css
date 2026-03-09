@@ -219,3 +219,39 @@
         text-align: center;
     }
 }
+
+/* Ajustes extra para pantallas muy pequeñas */
+@media (max-width: 360px) {
+    .hero-name {
+        font-size: 2rem;
+    }
+
+    .hero-title {
+        font-size: 1.1rem;
+        min-height: 50px;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+    }
+
+    .hero-stats {
+        padding: 1rem 0.5rem;
+        gap: 0.5rem;
+    }
+
+    .stat-number {
+        font-size: 1.5rem;
+    }
+
+    .stat-label {
+        font-size: 0.7rem;
+    }
+
+    .btn-primary,
+    .btn-secondary,
+    .btn-outline {
+        padding: 10px 20px;
+        font-size: 0.85rem;
+    }
+}
