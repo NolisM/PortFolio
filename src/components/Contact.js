@@ -59,7 +59,6 @@ const Contact = () => {
         mensaje: ''
       });
     } catch (error) {
-      console.error('Error:', error);
       swal({
         title: 'Error',
         text: 'Hubo un problema al enviar el mensaje. Intentalo de nuevo.',

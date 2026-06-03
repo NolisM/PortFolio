@@ -12,25 +12,23 @@ const Hero = () => {
                         <h1 className="hero-name">Nolis Maldonado</h1>
                         <h2 className="hero-title">Full Stack Developer</h2>
                         <p className="hero-description">
-                            Full Stack Developer con mas de 3 años de experiencia creando soluciones digitales.
-                            Actualmente colaboro en el desarrollo de herramientas de automatización
-                            en entornos laborales reales.
+                            Full Stack Developer con +4 años de experiencia. Especializada en automatización de CRMs y desarrollo de aplicaciones escalables con React, Next.js y Node.js.
                         </p>
                         <div className="hero-buttons">
                             <a href="#projects" className="btn-primary">Ver Proyectos</a>
                             <a href="#contact" className="btn-secondary">Contactame</a>
-                            <a href="/pdf/NolisMaldonadoCV.pdf" download className="btn-outline">
+                            <a href="/pdf/NolisMaldonadoCv.pdf" download className="btn-outline">
                                 📄 Descargar CV
                             </a>
                         </div>
                     </div>
                     <div className="hero-stats">
                         <div className="stat-card">
-                            <span className="stat-number">+3</span>
+                            <span className="stat-number">+4</span>
                             <span className="stat-label">Años experiencia</span>
                         </div>
                         <div className="stat-card">
-                            <span className="stat-number">+20</span>
+                            <span className="stat-number">+10</span>
                             <span className="stat-label">Proyectos</span>
                         </div>
                         <div className="stat-card">

@@ -11,7 +11,7 @@ const Footer = () => {
                     <div className="footer-info">
                         <h3>Nolis Maldonado</h3>
                         <p>
-                            Full Stack Developer con mas de 3 años de experiencia creando soluciones
+                            Full Stack Developer con mas de 4 años de experiencia creando soluciones
                             digitales que optimizan procesos y mejoran la eficiencia operativa.
                         </p>
                         <div className="footer-badge">

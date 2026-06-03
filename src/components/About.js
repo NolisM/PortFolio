@@ -20,7 +20,7 @@ const About = () => {
                         </div>
                     </div>
                     <div className="about-text">
-                        <h3>Full Stack Developer con màs de3 años de experiencia</h3>
+                        <h3>Full Stack Developer con más de 4 años de experiencia</h3>
 
                         <p>
                             Me gusta crear soluciones digitales que <strong>optimizan procesos y mejoran la eficiencia operativa</strong>.
