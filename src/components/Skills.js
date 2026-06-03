@@ -6,16 +6,10 @@ import 'devicon/devicon.min.css';
 
 const Skills = () => {
   const softSkills = [
-    { name: 'Creatividad', icon: 'fas fa-lightbulb' },
     { name: 'Trabajo en equipo', icon: 'fas fa-users' },
-    { name: 'Autonomía', icon: 'fas fa-user-check' },
-    { name: 'Actitud positiva', icon: 'fas fa-smile' },
-    { name: 'Tolerancia a la presión', icon: 'fas fa-clock' },
     { name: 'Capacidad resolutiva', icon: 'fas fa-puzzle-piece' },
-    { name: 'Empatía', icon: 'fas fa-heart' },
-    { name: 'Respeto', icon: 'fas fa-handshake' },
-    { name: 'Resiliencia', icon: 'fas fa-shield-alt' }
-  ];
+    { name: 'Autonomía', icon: 'fas fa-user-check' }
+];
 
   const techSkills = [
     { name: 'JavaScript', icon: 'devicon-javascript-plain colored' },
@@ -76,11 +70,7 @@ const Skills = () => {
                   <i className={skill.icon}></i>
                 </div>
                 <h4 className="tech-skill-name">{skill.name}</h4>
-                <span className="tech-skill-level">
-                  {skill.name.includes('PHP') || skill.name.includes('Bootstrap')
-                    ? 'Experiencia laboral'
-                    : 'Intermedio'}
-                </span>
+               
               </div>
             ))}
           </div>

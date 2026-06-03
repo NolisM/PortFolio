@@ -20,25 +20,22 @@ const About = () => {
                         </div>
                     </div>
                     <div className="about-text">
-                        <h3>Full Stack Developer con más de 4 años de experiencia</h3>
-
                         <p>
-                            Me gusta crear soluciones digitales que <strong>optimizan procesos y mejoran la eficiencia operativa</strong>.
-                            Mi enfoque combina el desarrollo técnico con una comprensión de las necesidades del negocio,
-                            buscando siempre traducir requerimientos complejos en herramientas funcionales y escalables.
+                            Me especializo en construir <strong>herramientas digitales que resuelven problemas reales </strong> 
+                            y mejoran el trabajo de los equipos. Me gusta crear soluciones que combinan 
+                            <strong> tecnología limpia con impacto tangible</strong> en el día a día de las personas.
                         </p>
                         <p>
-                            He trabajado en <strong>entornos laborales reales</strong> desarrollando sistemas de gestión interna,
-                            automatizaciones para equipos comerciales y herramientas administrativas. También participé
-                            en proyectos desde cero hasta producción, colaborando en equipos multidisciplinarios con
-                            diseñadores, QAs y product managers.
+                            He trabajado en <strong>proyectos desde cero hasta producción</strong>, colaborando con 
+                            diseñadores, QAs y product managers. Me motiva la <strong>mejora continua</strong>, 
+                            aprender nuevas tecnologías y <strong>enfrentar desafíos que me hagan crecer </strong> 
+                            como profesional.
                         </p>
                         <p>
-                            Disfruto del <strong>trabajo colaborativo</strong>, la mejora continua y construir productos que
-                            realmente marquen la diferencia en el día a día de las personas.
+                            Busco formar parte de un <strong>equipo donde pueda aportar mi experiencia </strong> 
+                            en automatización, desarrollo web y resolución de problemas, 
+                            mientras <strong>sigo aprendiendo y desarrollándome</strong>.
                         </p>
-
-
                     </div>
                 </div>
             </div>

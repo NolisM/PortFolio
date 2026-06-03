@@ -12,7 +12,7 @@ const Hero = () => {
                         <h1 className="hero-name">Nolis Maldonado</h1>
                         <h2 className="hero-title">Full Stack Developer</h2>
                         <p className="hero-description">
-                            Full Stack Developer con +4 años de experiencia. Especializada en automatización de CRMs y desarrollo de aplicaciones escalables con React, Next.js y Node.js.
+                            Especializada en automatización de CRMs y desarrollo de aplicaciones escalables con React, Next.js y Node.js.
                         </p>
                         <div className="hero-buttons">
                             <a href="#projects" className="btn-primary">Ver Proyectos</a>
@@ -28,11 +28,11 @@ const Hero = () => {
                             <span className="stat-label">Años experiencia</span>
                         </div>
                         <div className="stat-card">
-                            <span className="stat-number">+10</span>
+                            <span className="stat-number">+12</span>
                             <span className="stat-label">Proyectos</span>
                         </div>
                         <div className="stat-card">
-                            <span className="stat-number">+5</span>
+                            <span className="stat-number">+15</span>
                             <span className="stat-label">Tecnologías</span>
                         </div>
                     </div>
